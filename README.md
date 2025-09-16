@@ -55,20 +55,12 @@ This repository implements a zero-shot image editing pipeline that unites multim
 ## ⚙️ Reproducing the Environment
 
 ```bash
-# Clone the VisionReasoner base repository
-git clone https://github.com/dvlab-research/VisionReasoner.git
-cd VisionReasoner
-
 # Create and activate the conda environment
 conda create -n image_editing python=3.12
 conda activate image_editing
 
 # Install dependencies
-pip3 install torch torchvision
 pip install -r requirements.txt
-pip install git+https://github.com/tencent-ailab/IP-Adapter.git
-pip install diffusers groq huggingface-hub python-dotenv
-pip install uvicorn fastapi streamlit
 ```
 ---
 ## 📦 IP-Adapter Checkpoints
