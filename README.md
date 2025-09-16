@@ -18,18 +18,19 @@ This repository presents the implementation of a **zero-shot image editing pipel
 
 ## 🖼️ Visual Examples
 
-### 🔍 Evaluation: Comparison with ChatGPT’s Native Image Editing
+### 🔍 Multistep Editing Evaluation: Comparison with ChatGPT’s Native Image Editing
 <p align="center">
   <img src="assets/multistep_evaluation.png" alt="Multistep Editing Evaluation Result" width="1024"/>
 </p>
 
 > Our pipeline demonstrates superior multistep image editing accuracy compared to ChatGPT, particularly in tasks requiring visual reasoning and precise masking.
 
+### 🔍 Memory Retention Evaluation: Comparison with ChatGPT’s Native Image Editing
 <p align="center">
   <img src="assets/memory_evaluation.png" alt="Memory Retention Evaluation Result" width="1024"/>
 </p>
 
-> Our pipeline demonstrates superior multistep image editing accuracy compared to ChatGPT, particularly in tasks requiring visual reasoning and precise masking.
+> Our pipeline demonstrates superior memory preservation during chat conversation compared to ChatGPT.
 ---
 
 ### 🎨 Streamlit App – Frontend Overview
