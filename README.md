@@ -20,7 +20,7 @@ This repository presents the implementation of a **zero-shot image editing pipel
 
 ### 🔍 Evaluation: Comparison with ChatGPT’s Native Image Editing
 <p align="center">
-  <img src="assets/multistep_evaluation.png" alt="Multistep Editing Evaluation Result" width="700"/>
+  <img src="assets/multistep_evaluation.png" alt="Multistep Editing Evaluation Result" width="1024"/>
 </p>
 
 > Our pipeline demonstrates superior multistep image editing accuracy compared to ChatGPT, particularly in tasks requiring visual reasoning and precise masking.
