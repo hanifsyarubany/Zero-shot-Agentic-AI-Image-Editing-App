@@ -1,5 +1,9 @@
 # Agentic AI Image Editor: Building a Multi-Turn, Multi-Agent Image Editing Stack
 
+<p align="center">
+  <img src="assets/cover" alt="Cover Image" width="700"/>
+</p>
+
 This repository implements a zero-shot image editing pipeline that unites multimodal reasoning, segmentation, and generative inpainting. Built on recent advances in vision–language models, the system translates natural instructions into grounded visual edits—supporting both text-guided and image-guided editing with minimal manual effort.
 
 📝 You can read the full article for detailed explanations here:  
