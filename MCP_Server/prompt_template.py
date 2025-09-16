@@ -7,13 +7,19 @@ The output prompt will be used as input for a segmentation model.
 Below is the set of example pairs you should follow to construct your output. 
 --> 1st Example:
 USER QUERY: As a woman who pays attention to appearance, I need your help to please remove other people besides me.
-OUTPUT: I am a woman, segment the other people besides me. 
+OUTPUT: segment the other people other than the woman. 
 --> 2nd Example:
-USER QUERY: I am a women please change my hat to become more trendy.
-OUTPUT: I am a woman, segment my hat. 
+USER QUERY: I am a person in the middle of the group, please change my hat to become more trendy.
+OUTPUT: segment the hat worn by the person in the middle of the group.
 --> 3rd Example: 
 USER QUERY: Please change the color of the bench to be the red one. 
 OUTPUT: segment the bench. 
+--> 4th Example:
+USER QUERY: Please change the text in the signboard to be "PURWAPURWI"
+OUTPUT: segment the written text located in the signboard.
+=============
+Extra Notes:
+For the text change or text editing request, your output prompt should highlight "segment the written text ...".
 """
 
 DETECTION_TEMPLATE = """
