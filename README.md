@@ -123,4 +123,32 @@ If you use this work, please consider citing the following foundational papers:
   year={2024}
 }
 @article{ye2023ip-adapter,
-  title={IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Di
+  title={IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models},
+  author={Ye, Hu and Zhang, Jun and Liu, Sibo and Han, Xiao and Yang, Wei},
+  booktitle={arXiv preprint arxiv:2308.06721},
+  year={2023}
+}
+@misc{chong2024catvtonconcatenationneedvirtual,
+ title={CatVTON: Concatenation Is All You Need for Virtual Try-On with Diffusion Models}, 
+ author={Zheng Chong and Xiao Dong and Haoxiang Li and Shiyue Zhang and Wenqing Zhang and Xujie Zhang and Hanqing Zhao and Xiaodan Liang},
+ year={2024},
+ eprint={2407.15886},
+ archivePrefix={arXiv},
+ primaryClass={cs.CV},
+ url={https://arxiv.org/abs/2407.15886}, 
+}
+@inproceedings{
+    tewel2025addit,
+    title={Add-it: Training-Free Object Insertion in Images With Pretrained Diffusion Models},
+    author={Yoad Tewel and Rinon Gal and Dvir Samuel and Yuval Atzmon and Lior Wolf and Gal Chechik},
+    booktitle={The Thirteenth International Conference on Learning Representations},
+    year={2025},
+    url={https://openreview.net/forum?id=ZeaTvXw080}
+}
+@InProceedings{zhao2025ObjectClear,
+    title     = {{ObjectClear}: Complete Object Removal via Object-Effect Attention},
+    author    = {Zhao, Jixin and Zhou, Shangchen and Wang, Zhouxia and Yang, Peiqing and Loy, Chen Change},
+    booktitle = {arXiv preprint arXiv:2505.22636},
+    year      = {2025}
+    }
+```
