@@ -26,7 +26,7 @@ This repository presents the implementation of a **zero-shot image editing pipel
 > Our pipeline demonstrates superior multistep image editing accuracy compared to ChatGPT, particularly in tasks requiring visual reasoning and precise masking.
 
 <p align="center">
-  <img src="assets/memory_evaluation.png" alt="Memory Retention Evaluation Result" width="700"/>
+  <img src="assets/memory_evaluation.png" alt="Memory Retention Evaluation Result" width="1024"/>
 </p>
 
 > Our pipeline demonstrates superior multistep image editing accuracy compared to ChatGPT, particularly in tasks requiring visual reasoning and precise masking.
