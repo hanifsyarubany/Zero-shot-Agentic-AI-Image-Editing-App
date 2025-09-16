@@ -82,27 +82,31 @@ git clone https://huggingface.co/h94/IP-Adapter
 ---
 ## 🚀 Running the Application
 
-Once you've set up the environment and downloaded the required models, you can launch both the backend and frontend with the following commands:
+Once you've set up the environment and downloaded the required models, you can launch both MCP (server & client) and frontend with the following commands:
 
-#### ✅ Run the Backend Server (FastAPI)
+#### ✅ Run the MCP Server
 ```bash
-uvicorn main:app --port 8080 --reload
+python -m MCP_Server.mcp_server
 ```
-#### ✅ Run the Frontend (Streamlit)
+#### ✅ Run the MCP Client
 ```bash
-streamlit run frontend.py
+uvicorn MCP_Client.mcp_client:app --host 0.0.0.0 --port 8000 --reload
+```
+#### ✅ Run the Frontend (Chainlit)
+```bash
+chainlit run MCP_Client/frontend.py --port 8885
 ```
 ---
 ## ⚠️ Caution
 
-This project requires **a high-end GPU with at least 48 GB of VRAM** to run all models (e.g., Vision Reasoner, SAM-2, and PrefPaint) efficiently in memory.
+This project requires **a high-end GPU with at least 48 GB of VRAM** to run all models (e.g., Vision Reasoner, SAM-2, and PrefPaint, IP-Adapter, CatVTON, Add-it, ObjectClear) efficiently in memory.
 
 If you attempt to run this pipeline on hardware with less VRAM, you may encounter:
 - Out-of-memory (OOM) errors
 - Slow or failed inferences
 - Inability to load large vision-language models
 
-> 🖥️ This setup was tested using an **NVIDIA Quadro RTX 8000 (48GB VRAM)**. Performance may vary on different hardware.
+> 🖥️ This setup was tested using an **6x NVIDIA Quadro RTX 8000 (48GB VRAM)**. Performance may vary on different hardware.
 
 ---
 ## 📚 Citation
@@ -127,9 +131,4 @@ If you use this work, please consider citing the following foundational papers:
   year={2024}
 }
 @article{ye2023ip-adapter,
-  title={IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models},
-  author={Ye, Hu and Zhang, Jun and Liu, Sibo and Han, Xiao and Yang, Wei},
-  booktitle={arXiv preprint arxiv:2308.06721},
-  year={2023}
-}
-```
+  title={IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Di
