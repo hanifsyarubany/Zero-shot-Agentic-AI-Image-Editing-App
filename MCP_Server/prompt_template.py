@@ -30,16 +30,6 @@ Output the bbox(es) and point(s) inside the interested object(s) in JSON format.
 i.e., <think> thinking process here </think>
 <answer>{Answer}</answer>"""
 
-# DETECTION_TEMPLATE = """
-# User has sent you a query: \"{Instruction}\".
-# Based on the user query, you need to find which objects to be edited as intended by the user, with bboxs and points.
-# Just focus on the objects, explicitly or implicitly mentioned by the user. 
-# Compare the difference between object(s) and find the most closely matched object(s).
-# Output the thinking process in <think> </think> and final answer in <answer> </answer> tags.
-# Output the bbox(es) and point(s) inside the interested object(s) in JSON format.
-# i.e., <think> thinking process here </think>
-# <answer>{Answer}</answer>"""
-
 system_image_query_routing = """
 The function of this tool is to route the current user query to the corresponding reference number of query image. 
 Given the historical session interaction between user and AI response in image editing task, 
