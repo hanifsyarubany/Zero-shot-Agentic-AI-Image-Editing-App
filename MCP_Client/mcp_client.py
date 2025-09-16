@@ -99,6 +99,8 @@ async def chat_inference_one_image(req: ChatRequest, img: ImageRequest):
             url_query_image = data["image_initial_query"]
         else:
             url_query_image = data["history"][f"{ref_number}"]["image_response"]
+        # Save 
+        base64_to_pil(url_query_image).save(f"{session_path}/temp/result.png")
     print("QUERY IMAGE - RETRIEVED")
     # Define user prompt calling
     user_prompt_calling = f"""
@@ -132,6 +134,8 @@ async def chat_inference_only_text_query(req: ChatRequest):
         url_query_image = data["image_initial_query"]
     else:
         url_query_image = data["history"][f"{ref_number}"]["image_response"]
+    # Save 
+    base64_to_pil(url_query_image).save(f"{session_path}/temp/result.png")
     print("QUERY IMAGE - RETRIEVED")
     # Define user prompt calling
     user_prompt_calling = f"""
@@ -147,6 +151,3 @@ async def chat_inference_only_text_query(req: ChatRequest):
     save_chat_session(current_user_query, url_result_image)
     print("CHAT SASSION - SAVED")
     return {"response":extract_base64(url_result_image)}
-
-
-
