@@ -25,8 +25,6 @@ This repository presents the implementation of a **zero-shot image editing pipel
   - CatVTON for garment try-on tasks  
 - **Text & UI Tools**: PIL-based text drawer (auto-fit) and bounding-box renderer.  
 - **Intermediate Store & Trace**: Saves outputs per step, enables partial undo and auditability.  
-- **Evaluation Harness**: Multi-turn prompt suite, continuity checks, and side-by-side baseline comparisons with ChatGPT.  
-
 
 ---
 
