@@ -9,10 +9,24 @@ This repository presents the implementation of a **zero-shot image editing pipel
 
 ## 🧠 Key Components
 
-- **Vision Reasoner**: Multimodal LLM (Qwen2.5-VL) fine-tuned for object localization using reasoning-chain prompts.
-- **SAM-2 by Meta AI**: For zero-shot segmentation guided by bounding boxes and foreground point prompts.
-- **PrefPaint (SDXL-based)**: A fine-tuned diffusion model aligned with human preferences for inpainting.
-- **IP-Adapter**: For image-guided prompt conditioning during inpainting tasks.
+- **MCP Orchestration**: MLLM Planner on MCP client, tools on MCP server, streaming via SSE.  
+- **Planner and Router**: Composes multistep jobs from a single query, selects and orders tools.  
+- **Session Memory**: Stores checkpoints, regions, masks, and references; supports rollbacks and multi-turn continuity.  
+- **Vision Grounding**: Qwen2.5-VL for reasoning over instructions and mapping them to image regions.  
+- **Zero-Shot Segmentation**: SAM-2 guided by text, bounding boxes, or points, refined for crisp masks.  
+- **Prompt Builders & Conditioning**:  
+  - MLLMs (e.g., GPT-5, Llama-4) for segmentation and diffusion prompts  
+  - IP-Adapter for reference image conditioning  
+- **Editing Engines**:  
+  - PrefPaint (SDXL-based) for human-aligned inpainting  
+  - SDXL Inpaint / IP-SDXL for reference-driven edits  
+  - ObjectClear for clean removals and background fill  
+  - NVLabs Add-it for object insertion via diffusion  
+  - CatVTON for garment try-on tasks  
+- **Text & UI Tools**: PIL-based text drawer (auto-fit) and bounding-box renderer.  
+- **Intermediate Store & Trace**: Saves outputs per step, enables partial undo and auditability.  
+- **Evaluation Harness**: Multi-turn prompt suite, continuity checks, and side-by-side baseline comparisons with ChatGPT.  
+
 
 ---
 
