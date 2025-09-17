@@ -51,7 +51,7 @@ This repository implements a zero-shot image editing pipeline that unites multim
 
 ### 🎨 Streamlit App – Frontend Overview
 <p align="center">
-  <img src="assets/frontend_ui.png" alt="Streamlit UI" width="700"/>
+  <img src="assets/frontend.png" alt="Streamlit UI" width="700"/>
 </p>
 
 ---
