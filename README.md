@@ -49,9 +49,9 @@ This repository implements a zero-shot image editing pipeline that unites multim
 > Our pipeline demonstrates superior memory preservation during chat conversation compared to ChatGPT.
 ---
 
-### 🎨 Streamlit App – Frontend Overview
+### 🎨 Chainlit App – Frontend Overview
 <p align="center">
-  <img src="assets/frontend.png" alt="Streamlit UI" width="700"/>
+  <img src="assets/frontend.png" alt="Chainlit UI" width="700"/>
 </p>
 
 ---
