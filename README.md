@@ -95,14 +95,14 @@ chainlit run MCP_Client/frontend.py --port 8885
 ---
 ## ⚠️ Caution
 
-This project requires **a high-end GPU with at least 48 GB of VRAM** to run all models (e.g., Vision Reasoner, SAM-2, and PrefPaint, IP-Adapter, CatVTON, Add-it, ObjectClear) efficiently in memory.
+This project requires **a high-end GPU with at least 48 GB of VRAM for each** to run all models (e.g., Vision Reasoner, SAM-2, and PrefPaint, IP-Adapter, CatVTON, Add-it, ObjectClear) efficiently in memory.
 
 If you attempt to run this pipeline on hardware with less VRAM, you may encounter:
 - Out-of-memory (OOM) errors
 - Slow or failed inferences
 - Inability to load large vision-language models
 
-> 🖥️ This setup was tested using an **6x NVIDIA Quadro RTX 8000 (48GB VRAM)**. Performance may vary on different hardware.
+> 🖥️ This setup was tested using **6x NVIDIA Quadro RTX 8000 (48GB VRAM)**. Performance may vary on different hardware.
 
 ---
 ## 📚 Citation
